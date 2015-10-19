@@ -1,0 +1,21 @@
+---
+meta:
+  instance_type: m1.medium
+  instance_ip: 192.168.120.118
+  networks:
+  - name: private
+    subnets:
+    - range: 10.10.2.0/24
+      gateway: 10.10.2.1
+      dns: [192.168.0.202]
+      cloud_properties: { net_id: a35f16cf-27a7-452e-9e8c-160c3f061ac6 }
+      reserved:
+      - 10.10.2.2-10.10.2.10
+  openstack:
+    auth_url: http://172.16.0.3:5000/v2.0
+    tenant: allomov.demo
+    username: allomov
+    api_key: 1qa@WS3ed
+    default_key_name: allomov
+    default_security_groups:
+    - all-open

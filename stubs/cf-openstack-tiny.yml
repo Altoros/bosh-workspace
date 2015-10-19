@@ -1,0 +1,14 @@
+director_uuid: "asdasdsa"
+openstack:
+  net_id: <%= p('openstack.net_id') %> CF_SUBNET1
+  auth_url: <%= p('openstack.auth_url') %>
+  tenant: <%= p('openstack.tenant') %>
+  username: <%= p('openstack.username') %>
+  api_key: <%= p('openstack.api_key') %>
+cf:
+  version: 219
+
+  subnet_1_az: 111
+  subnet_2_az: sss
+  security_group: 1221
+  floating_ip: "121312312"
